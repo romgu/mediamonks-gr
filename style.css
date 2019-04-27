@@ -309,7 +309,7 @@
 	    position: relative;
  	}
  	p {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	.item-b {
 		grid-area: header;
@@ -330,7 +330,7 @@
 
   @media (max-width: 800px) and (orientation: portrait) {
 	p {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.item-i {
 	    grid-area: intro;
