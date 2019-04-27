@@ -1,0 +1,341 @@
+/* font styles */
+
+	@font-face {
+	    font-family: "klavika";
+	    src: url("fonts/klavika-regular-webfont.woff") format('woff');
+	}
+
+	@font-face {
+	    font-family: "klavika - bold";
+	    src: url("fonts/klavika-bold-webfont.woff") format('woff');
+	    font-weight: bold;
+	}
+
+	@font-face {
+	    font-family: "klavika - light";
+	    src: url("fonts/klavika-light-webfont.woff") format('woff');
+	    font-weight: light;
+	}
+
+	@font-face {
+	    font-family: "klavika - medium";
+	    src: url("fonts/klavika-medium-webfont.woff") format('woff');
+	   	font-weight: medium;
+	}
+
+/* end font styles */
+
+/*Loader styles*/
+	#loadingScreen {
+		transition: all ease-out 2s;
+		width: 100%;
+		height: 100%;
+		background-color: #101010;
+		display: grid;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.monk {
+		width: auto; 
+		height: 0rem;
+		position: relative;
+    	transition: all ease-in 0.2s;
+	}
+
+	.monkB {
+		height: 10rem;
+	}
+
+	.smokeBackground {
+		justify-content: center;
+    	align-content: center;
+    	display: grid;
+	    background-image: url(src/smoke.png);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: right;
+	    transition: all ease-out 15s;
+	    width: 50rem;
+	    height: 20rem;
+	    background-position-x: 0px;
+	}
+
+	.smokeAnimation {
+		background-position-x: 450px; 
+	}
+
+	.loadingText {
+	    margin-top: 20px;
+	    position: relative;
+	    left: 30px;
+	    transition: all ease-in 0.5s;
+	    display: inline-block;
+	    font-family: "klavika";
+	    color: rgba(255,255,255,0.8);
+	}
+
+	.textAnimation {
+		left: 0px;
+	}
+
+/*End Loader Styles*/
+
+/*Main styles */
+	html, body {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0 auto;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+
+	p {
+		color: white;
+		text-transform: uppercase;
+		font-family: "klavika";
+		font-size: 3rem;
+		margin: 1rem 0 0 0;
+	}
+
+	p > span {
+		border-bottom: 1px solid currentColor;
+	}
+
+	a {
+		color: white;
+	}
+
+	div > img {
+		vertical-align:middle;
+		height: 2rem;
+		width: auto;
+		display: inline;
+	}
+
+	.regularText {
+		font-family: "klavika";
+		color: white;
+		font-size: 0.7rem;
+		text-shadow: 1.5px 1.5px #000000;
+	}
+
+	.contactText {
+		text-transform: none;
+		text-align: right;	
+		font-family: "klavika";
+		color: white;
+		font-size: 0.7rem;
+	}
+
+	#position {
+		display: flex;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	#guide {
+		display: flex;
+		cursor: pointer;
+		z-index: 2;
+	}
+
+	#position * {
+		width: 20px;
+		height: 14px;
+		text-align: center;
+		border: dotted 1.5px rgba(255,255,255,0.7);
+		color: white;
+		font-family: "klavika";
+		font-size: 0.7rem;
+		margin: 0 -1px;
+		display: grid;
+	}
+
+	#guide * {
+		border: dotted 1.5px rgba(255,255,255,0.0);
+		font-size: 0.7rem;
+		width: 12px;
+		height: 7.7px;
+		margin: 0 3px;
+		display: grid;
+	}
+
+	.current {
+		background-color: white;
+	    align-self: center;
+	    justify-self: center;
+	}
+
+	.transition {
+		transition: all ease-out 0.1s;
+	}
+
+	.hidden {
+		opacity: 0;
+		transition: all ease-out 0.1s;
+	}
+
+	.visibility {
+		transition: all ease-out 1.5s;
+		opacity: 100;
+	}
+/*End Main Styles*/
+
+/* Background and Carousel Styles */
+	#mainBackground {
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+	}
+
+	#carouselBG {
+		height: 100%;
+		width: auto;
+		background-image: url("src/background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: 0;
+		transition: all ease-out 0.8s;
+	}
+/* End Background and Carousel Styles */
+
+/* Content and Controllers styles */
+
+	/* items for Grid */
+		.item-a {
+		  grid-area: header;
+		}
+
+		.item-b {
+		  grid-area: header2;
+		}
+
+		.item-c {
+			grid-area: rightArrow;
+			height: 3rem;
+			margin-top: 1.6rem;
+		}
+
+		.item-d {
+			margin-top: 1.6rem;
+			grid-area: leftArrow;
+			height: 3rem;
+			align-self: start;
+		}
+
+		.item-e {
+		  grid-area: textLeft;
+		  align-self: center;
+		  justify-self: start;
+		  align-self: start;
+		}
+
+		.item-f {
+		  grid-area: textRight;
+		  align-self: center;
+		  justify-self: end;
+		  align-self: start;
+		}
+
+		.item-g {
+		  grid-area: intro;
+		}
+
+		.item-h {
+		  grid-area: position;
+		}
+
+		.item-i {
+		  grid-area: leyend;
+		}
+
+		.item-j {
+		  grid-area: logo;
+		  height: 4.5rem;
+		  width: auto;
+		  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(109deg) brightness(114%) contrast(118%);
+		}
+
+		.item-k {
+		  grid-area: contact;
+		}
+
+	/* end items for grid */
+
+	.alignEnd {
+		align-self: end;
+		justify-self: end;
+	}
+
+	.alignCenter {
+		align-self: center;
+		justify-self: center;
+	}
+
+	.alignCenterStart {
+		align-self: center;
+		justify-self: start;
+	}
+
+	.fullScreen {
+		width: 100%;
+		height: 100%;
+	}
+
+	.gridLayout {
+			width: 97%;
+			height: 99%;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 0.1fr 0.3fr 0.15fr 0.15fr 0.2fr 0.9fr 0.9fr 0.8fr 0.1fr;
+			grid-template-rows: 0.8fr 0.6fr 0.2fr 0.6fr 0.25fr 0.25fr;
+			grid-template-areas: 
+		    "header header header header header header . header2 header2"
+		    ". . . . . . . . ."
+    		"leftArrow textLeft textLeft textLeft textLeft textLeft textRight textRight rightArrow"
+    		". . . . . . contact contact ."
+    		"intro intro intro intro intro . . . ."
+    		"position position position leyend leyend leyend . . logo";
+	}
+/* End Content and Controllers Styles */
+
+/* media query styles */
+ @media (max-width: 1400px) {
+ 	.item-i {
+	    grid-area: leyend;
+	    left: 100px;
+	    position: relative;
+ 	}
+ 	p {
+		font-size: 2.5rem;
+	}
+	.item-b {
+		grid-area: header;
+		justify-self: end;
+	    position: relative;
+		right: 70px;
+	}	
+	.gridLayout {
+			grid-template-areas: 
+		    "header header header header header header header header header"
+		    ". . . . . . . . ."
+    		"leftArrow textLeft textLeft textLeft textLeft textLeft textRight textRight rightArrow"
+    		". . . . . . contact contact ."
+    		"intro intro intro intro intro intro intro . ."
+    		"position position position leyend leyend leyend . . logo";
+	}
+ }
+
+  @media (max-width: 800px) and (orientation: portrait) {
+	p {
+		font-size: 2rem;
+	}
+	.item-i {
+	    grid-area: intro;
+	    left: 0px;
+	    position: inherit;
+ 	}
+ }
+/* End media query styles */
