@@ -367,6 +367,10 @@
     top: 10px;
 	}
 
+	.item-j {
+	  height: 2.5rem;
+	}
+
 	.item-k {
 	  grid-area: contact;
 	}
