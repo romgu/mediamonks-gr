@@ -332,10 +332,56 @@
 	p {
 		font-size: 1.5rem;
 	}
+
+	.item-b {
+	  grid-area: header;
+	  justify-self: end;
+	}
+
+	.item-e {
+	  grid-area: textLeft;
+	  align-self: center;
+	  justify-self: start;
+	  align-self: start;
+	}
+
+	.item-f {
+	  grid-area: textLeft;
+	  align-self: center;
+	  justify-self: end;
+	  align-self: start;
+	}
+
+	.item-g {
+	  grid-area: intro;
+	}
+
+	.item-h {
+	  grid-area: position;
+	  justify-self: center;
+	}
+
 	.item-i {
-	    grid-area: intro;
-	    left: 0px;
-	    position: inherit;
- 	}
+    grid-area: intro;
+    justify-self: center;
+    align-self: end;
+    left: 30px;
+    top: 10px;
+	}
+
+	.item-k {
+	  grid-area: contact;
+	}
+	
+ 	.gridLayout {
+ 			grid-template-columns: 0.1fr 1fr 0.1fr;
+			grid-template-rows: 0.6fr 0.4fr 1fr 0.25fr 0.25fr;
+			grid-template-areas: 
+		    "header header header"
+    		". contact contact"
+    		"leftArrow textLeft rightArrow"
+    		"intro intro ."
+    		". position logo";
+	}
  }
 /* End media query styles */
