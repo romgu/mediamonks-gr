@@ -78,7 +78,6 @@
 	.textAnimation {
 		left: 0px;
 	}
-
 /*End Loader Styles*/
 
 /*Main styles */
@@ -300,90 +299,90 @@
 /* End Content and Controllers Styles */
 
 /* media query styles */
- @media (max-width: 1400px) {
- 	.item-i {
-	    grid-area: leyend;
-	    left: 100px;
-	    position: relative;
- 	}
- 	p {
-		font-size: 2rem;
-	}
-	.item-b {
-		grid-area: header;
-		justify-self: end;
-	    position: relative;
-		right: 70px;
-	}	
-	.gridLayout {
-			grid-template-rows: 0.6fr 0.8fr 0.6fr 0.25fr 0.25fr;
-			grid-template-areas: 
-		    "header header header header header header header header header"
-    		"leftArrow textLeft textLeft textLeft textLeft textLeft textRight textRight rightArrow"
-    		". . . . . . contact contact ."
-    		"intro intro intro intro intro intro intro . ."
-    		"position position position leyend leyend leyend . . logo";
-	}
- }
-
-  @media (max-width: 800px) {
-	p {
-		font-size: 1.5rem;
+	@media (max-width: 1400px) {
+	 	.item-i {
+		    grid-area: leyend;
+		    left: 100px;
+		    position: relative;
+	 	}
+	 	p {
+			font-size: 2.5rem;
+		}
+		.item-b {
+			grid-area: header;
+			justify-self: end;
+		    position: relative;
+			right: 70px;
+		}	
+		.gridLayout {
+			    grid-template-rows: 1.2fr 0.6fr 0.4fr 0.2fr 0.25fr;
+				grid-template-areas: 
+			    "header header header header header header header header header"
+	    		"leftArrow textLeft textLeft textLeft textLeft textLeft textRight textRight rightArrow"
+	    		". . . . . . contact contact ."
+	    		"intro intro intro intro intro intro intro . ."
+	    		"position position position leyend leyend leyend . . logo";
+		}
 	}
 
-	.item-b {
-	  grid-area: header;
-	  justify-self: end;
-	}
+	@media (max-width: 800px) {
+		p {
+			font-size: 1.5rem;
+		}
 
-	.item-e {
-	  grid-area: textLeft;
-	  justify-self: start;
-	  align-self: start;
-	  background-color: rgba(0,0,0,0.5);
-	}
+		.item-b {
+		  grid-area: header;
+		  justify-self: end;
+		}
 
-	.item-f {
-	  grid-area: textLeft;
-	  justify-self: end;
-	  align-self: start;
-	  background-color: rgba(0,0,0,0.5);
-	}
+		.item-e {
+		  grid-area: textLeft;
+		  justify-self: start;
+		  align-self: start;
+		  background-color: rgba(0,0,0,0.5);
+		}
 
-	.item-g {
-	  grid-area: intro;
-	}
+		.item-f {
+		  grid-area: textLeft;
+		  justify-self: end;
+		  align-self: start;
+		  background-color: rgba(0,0,0,0.5);
+		}
 
-	.item-h {
-	  grid-area: position;
-	  justify-self: center;
-	}
+		.item-g {
+		  grid-area: intro;
+		}
 
-	.item-i {
-    grid-area: intro;
-    justify-self: center;
-    align-self: end;
-    left: 30px;
-    top: 10px;
-	}
+		.item-h {
+		  grid-area: position;
+		  justify-self: center;
+		}
 
-	.item-j {
-	  height: 2.5rem;
-	}
+		.item-i {
+	    grid-area: intro;
+	    justify-self: center;
+	    align-self: end;
+	    left: 30px;
+	    top: 10px;
+		}
 
-	.item-k {
-	  grid-area: contact;
+		.item-j {
+		  height: 2.5rem;
+		}
+
+		.item-k {
+		  grid-area: contact;
+		}
+		
+	 	.gridLayout {
+	 			grid-template-columns: 0.1fr 1fr 0.1fr;
+				grid-template-rows: 0.6fr 0.4fr 1fr 0.25fr 0.25fr;
+				grid-template-areas: 
+			    "header header header"
+	    		". contact contact"
+	    		"leftArrow textLeft rightArrow"
+	    		"intro intro ."
+	    		". position logo";
+		}
 	}
-	
- 	.gridLayout {
- 			grid-template-columns: 0.1fr 1fr 0.1fr;
-			grid-template-rows: 0.6fr 0.4fr 1fr 0.25fr 0.25fr;
-			grid-template-areas: 
-		    "header header header"
-    		". contact contact"
-    		"leftArrow textLeft rightArrow"
-    		"intro intro ."
-    		". position logo";
-	}
- }
 /* End media query styles */
